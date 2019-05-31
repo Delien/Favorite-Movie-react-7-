@@ -18,8 +18,6 @@ class MoovieForm extends React.Component {
   }
   submitForm(e) {
     e.preventDefault();
-  }
-  render() {
     const config = {
       method: "POST",
       headers: {
@@ -41,7 +39,8 @@ class MoovieForm extends React.Component {
         console.error(e);
         alert("Erreur lors de l'ajout de votre film");
       });
-
+  }
+  render() {
     return (
       <div className="formMoovie">
         <h1>Mon film favoris</h1>
